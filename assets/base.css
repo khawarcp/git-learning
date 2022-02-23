@@ -2354,6 +2354,10 @@ details-disclosure > details {
   background: red;
 }
 
+.header__menu-item span {
+  background: lightblue;
+}
+
 span.header__active-menu-item {
-  background: rebeccapurple;
+  background: green;
 }
