@@ -2353,3 +2353,7 @@ details-disclosure > details {
 .header__heading-link .h2 {
   background: red;
 }
+
+span.header__active-menu-item {
+  background: rebeccapurple;
+}
