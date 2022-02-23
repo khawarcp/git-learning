@@ -2358,3 +2358,6 @@ details-disclosure > details {
 span.header__active-menu-item {
   background: green;
 }
+body {
+  font-family: 'Circular-Loom';
+}
