@@ -216,11 +216,12 @@
   "sections": {
     "header": {
       "announcement": "Announcement",
-      "menu": "Menu",
+      "menu": "Menu Check",
       "cart_count": {
         "one": "{{ count }} item",
         "other": "{{ count }} items"
-      }
+      },
+      "header": "Header"
     },
     "cart": {
       "title": "Your cart",
