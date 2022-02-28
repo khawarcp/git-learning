@@ -252,6 +252,12 @@
         }
       }
     },
+    "head": {
+      "name": "Header Testing",
+      "settings": {
+        "head": "Check the Header"
+      }
+    },
     "apps": {
       "name": "Apps",
       "settings": {
