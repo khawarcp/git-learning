@@ -368,6 +368,18 @@
             }
           }
         },
+        "article": {
+          "name": "article",
+          "settings": {
+            "article": {
+              "label": "article"
+            },
+            "image_padding": {
+              "label": "Add Article padding",
+              "info": "Select image padding if you don't want your image to be cropped."
+            }
+          }
+        },
         "video": {
           "name": "Video",
           "settings": {
