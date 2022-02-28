@@ -216,7 +216,6 @@
   "sections": {
     "header": {
       "announcement": "Announcement",
-      "header": "Header",
       "menu": "Menu",
       "cart_count": {
         "one": "{{ count }} item",
