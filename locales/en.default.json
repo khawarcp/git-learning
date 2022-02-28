@@ -217,11 +217,13 @@
     "header": {
       "announcement": "Announcement",
       "menu": "Menu",
-      "head": "Header Language Testing",
       "cart_count": {
         "one": "{{ count }} item",
         "other": "{{ count }} items"
       }
+    },
+    "Language": {
+      "head": "Header"
     },
     "cart": {
       "title": "Your cart",
