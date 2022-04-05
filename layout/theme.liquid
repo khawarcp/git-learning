@@ -182,7 +182,7 @@
     <script>
       $('.collection_btn').click(function(e){
         e.preventDefault();
-        var form = $('#collection_form');
+         this.form = $('#collection_form');
         $.ajax({
           url : '/cart/add.js',
           type : 'POST',
