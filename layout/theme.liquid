@@ -183,10 +183,7 @@
       $('.collection_btn').click(function(e){
         e.preventDefault();
         let totalQuant = '{{ cart.item_count }}';
-        
-        Shopify.onItemAdded = function(line_item) {
-          alert(Shopify.getCart());
-        }; 
+        s
         
         
         var form = $(this).parents('#collection_form');
