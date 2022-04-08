@@ -182,6 +182,8 @@
     <script>
       $('.collection_btn').click(function(e){
         e.preventDefault();
+        let totalQuant = '{{ cart.item_count }}';
+        
         
         var form = $(this).parents('#collection_form');
         $.ajax({
@@ -191,6 +193,7 @@
           data : form.serialize(),
           success : function(data){
             console.log('The Form is submitted');
+            alert(totalQuant);
           }
         }).done(function(){
           console.log('Done');
