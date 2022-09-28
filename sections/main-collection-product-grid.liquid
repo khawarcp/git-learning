@@ -55,6 +55,7 @@
 
         <div class="load-more-wrapper">
           <button id="load-more-btn"onClick="loadMore()"> Load More </button>
+          <div id="load-more-spinner"> Load More </div>
         </div>
         {%- if paginate.pages > 1 -%}
           {% render 'pagination', paginate: paginate, anchor: '' %}
