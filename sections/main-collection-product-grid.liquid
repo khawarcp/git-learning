@@ -53,6 +53,9 @@
           {%- endfor -%}
         </ul>
 
+        <div class="load-more-wrapper">
+          <button class="load-more-btn"> Load More </button>
+        </div>
         {%- if paginate.pages > 1 -%}
           {% render 'pagination', paginate: paginate, anchor: '' %}
         {%- endif -%}
