@@ -81,6 +81,37 @@
      100% { transform : rotate(360deg)  }
 }
 </style>
+<!-- <script>
+  let productGrid = document.querySelector("#product-grid");
+let url = productGrid.dataset.nextUrl;
+let loadMoreBtn = document.getElementById('load-more-btn');
+
+function loadMore(){
+    fetch(url)
+      .then(response => response.text())
+      .then((responseText) => {
+
+      let new_html =  new DOMParser().parseFromString(responseText, 'text/html').getElementById('ProductGridContainer').innerHTML;
+
+          // document.getElementById('ProductGridContainer').innerHTML = new_html;
+
+      }).then((next_page) => {
+          let new_products = document.querySelector("#product-grid");
+          let new_url = new_products.dataset.nextUrl;
+          
+          if(new_url){
+              console.log(new_url);
+              document.querySelector("#load-more-btn").style.display = "block";
+              url = new_url;
+          }else{
+              document.querySelector("#load-more-btn").style.display = "none";
+          }
+        
+      })
+}
+
+</script> -->
+
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
