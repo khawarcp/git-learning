@@ -65,6 +65,22 @@
   {%- endpaginate -%}
 </div>
 
+<style>
+  div#load-more-spinner {
+    height: 20px;
+    width: 20px;
+    border: 4px solid #8d8989;
+    border-radius: 50%;
+    border-top: 4px solid red;
+    animation: spin 2s linear infinite;
+    display : none;
+}
+
+@keyframes spin{
+    0% { transform : rotate(0deg)  }
+     100% { transform : rotate(360deg)  }
+}
+</style>
 {% schema %}
 {
   "name": "t:sections.main-collection-product-grid.name",
