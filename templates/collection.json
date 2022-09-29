@@ -19,7 +19,13 @@
         "show_rating": false,
         "enable_filtering": true,
         "enable_sorting": true,
-        "collapse_on_larger_devices": false
+        "collapse_on_larger_devices": false,
+        "product_list": [
+          "bump-support-leggings-black-1",
+          "cloth-covered-accent-chair",
+          "copy-of-bump-support-leggings-black",
+          "copy-of-lorem-ipsum-product"
+        ]
       }
     }
   },
