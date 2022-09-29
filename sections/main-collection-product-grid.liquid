@@ -1,3 +1,19 @@
+{% for product in section.settings.product_list %}
+{% render 'product-card',  product_card_product: product %}
+{% endfor %}
+
+{{ section.settings.product_description_video | split : "v=" | last }}
+
+<iframe src="https://www.youtube.com/embed/{{ section.settings.product_description_video | split : 'v=' | last }}" ></iframe> <br>
+
+{{ section.settings.logo_image | image_url: width: 400 | image_tag: width: 300 }}
+
+
+
+
+
+
+
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
@@ -65,15 +81,7 @@
   {%- endpaginate -%}
 </div>
 
-{% for product in section.settings.product_list %}
-{% render 'product-card',  product_card_product: product %}
-{% endfor %}
 
-{{ section.settings.product_description_video | split : "v=" | last }}
-
-<iframe src="https://www.youtube.com/embed/{{ section.settings.product_description_video | split : 'v=' | last }}" ></iframe> <br>
-
-{{ section.settings.logo_image | image_url: width: 400 | image_tag: width: 300 }}
 
 <style>
   div#load-more-spinner {
