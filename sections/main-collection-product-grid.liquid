@@ -65,6 +65,9 @@
   {%- endpaginate -%}
 </div>
 
+{% for product in section.settings.product_list %}
+{% render 'product-card',  product_card_product: product %}
+{% endfor %}
 <style>
   div#load-more-spinner {
     height: 20px;
@@ -203,6 +206,12 @@ function loadMore(){
       "id": "collapse_on_larger_devices",
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.collapse_on_larger_devices.label"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Products",
+      "limit": 12
     }
   ]
 }
