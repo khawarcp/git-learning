@@ -26,7 +26,8 @@
           "copy-of-bump-support-leggings-black",
           "copy-of-lorem-ipsum-product"
         ],
-        "product_description_video": "https:\/\/www.youtube.com\/watch?v=0eFhWtpoZQc"
+        "product_description_video": "https:\/\/www.youtube.com\/watch?v=0eFhWtpoZQc",
+        "logo_image": "shopify:\/\/shop_images\/home-banner.png"
       }
     }
   },
