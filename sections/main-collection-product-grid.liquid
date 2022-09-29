@@ -6,7 +6,7 @@
 
 <iframe src="https://www.youtube.com/embed/{{ section.settings.product_description_video | split : 'v=' | last }}" ></iframe> <br>
 
-{{ section.settings.logo_image | image_url: width: 400 | image_tag: widths: '200, 300, 400' }}
+{{ section.settings.logo_image | image_url: width: 400 | image_tag: sizes: '(min-width:1600px) 960px, (min-width: 750px) calc((100vw - 11.5rem) / 2), calc(100vw - 4rem)' }}
 
 
 
