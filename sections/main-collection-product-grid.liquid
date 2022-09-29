@@ -69,7 +69,7 @@
 {% render 'product-card',  product_card_product: product %}
 {% endfor %}
 
-{{ section.settings.product_description_video }}
+{{ section.settings.product_description_video | split : '/' | last }}
 
 <iframe src="{{ section.settings.product_description_video }}" ></iframe>
 
