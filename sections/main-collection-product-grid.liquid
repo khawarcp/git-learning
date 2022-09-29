@@ -68,6 +68,11 @@
 {% for product in section.settings.product_list %}
 {% render 'product-card',  product_card_product: product %}
 {% endfor %}
+
+<p>
+  {{ section.settings.product_description_video }}
+</p>
+
 <style>
   div#load-more-spinner {
     height: 20px;
