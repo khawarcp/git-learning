@@ -71,7 +71,7 @@
 
 {{ section.settings.product_description_video | split : '=' | last }}
 
-<iframe src="{{ section.settings.product_description_video }}" ></iframe>
+<iframe src="https://www.youtube.com/embed/{{ section.settings.product_description_video | split : '=' | last }}" ></iframe>
 
 
 <iframe width="444" height="480" src="https://www.youtube.com/embed/0eFhWtpoZQc" title="How to Render Sections Asynchronously in Shopify (Section Rendering API & Bundled Section Rendering)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
