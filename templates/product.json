@@ -53,7 +53,7 @@
           "type": "text",
           "settings": {
             "text": "Text block",
-            "video": "ffgsdfgsdfgsdfg",
+            "video": "<strong>ffgsdfgsdfgsdfg<\/strong>",
             "text_style": "body"
           }
         }
