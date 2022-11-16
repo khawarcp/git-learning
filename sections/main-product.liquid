@@ -183,7 +183,7 @@
               {{- block.settings.text -}}
             </p>
 
-           {{ product.metafields.custom.video_testing | media_tag: image_size: "100x", autoplay: true, loop: loop, controls: true, preload: "none" }}
+           {{ block.settings.video | media_tag: image_size: "100x", autoplay: true, loop: loop, controls: true, preload: "none" }}
 
 
             
