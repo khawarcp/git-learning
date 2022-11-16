@@ -52,7 +52,7 @@
           "type": "text",
           "settings": {
             "text": "Text block",
-            "video": "shopify:\/\/files\/videos\/Share your brand story by adding a video to your store.mp4",
+            "video": "{{ product.metafields.custom.video_testing.value }}",
             "text_style": "body"
           }
         }
