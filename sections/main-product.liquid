@@ -183,7 +183,7 @@
               {{- block.settings.text -}}
             </p>
 
-            {{ block.settings.video.sources[0] }}
+            {{ block.settings.video.sources | json }}
             
           {%- when 'title' -%}
             <h1 class="product__title" {{ block.shopify_attributes }}>
