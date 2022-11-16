@@ -7,6 +7,7 @@
           "type": "text",
           "settings": {
             "text": "{{ product.vendor }}",
+            "video": "",
             "text_style": "uppercase"
           }
         },
@@ -52,7 +53,7 @@
           "type": "text",
           "settings": {
             "text": "Text block",
-            "video": "{{ product.metafields.custom.video_testing.value }}",
+            "video": "ffgsdfgsdfgsdfg",
             "text_style": "body"
           }
         }
