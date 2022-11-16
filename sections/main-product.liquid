@@ -186,6 +186,23 @@
             <h1 class="product__title" {{ block.shopify_attributes }}>
               {{ product.title | escape }}
             </h1>
+
+
+            <ul class="recommended-products">
+            {% if product.metafields.custom.refernce_product != blank %}
+              {% assign recommended_product_1 =  product.metafields.custom.refernce_product.value %}
+              <li>
+                <a href="{{ recommended_product_1.url }}" target="_blank">
+                  <img src="{{ recommended_product_1.featured_image | img_url: '100x' }}">
+                  <div>
+                    <p>{{ recommended_products_1.title }}</p>
+                    <p class="uaf__price">{{recommended_products_1.price | money }}</p>
+                  </div>
+                 </a>
+                </li>
+            {% endif %}
+          </ul>
+            
           {%- when 'price' -%}
             <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
               {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
