@@ -51,7 +51,7 @@
         "51de10a3-39bc-4642-b5b7-89385047e398": {
           "type": "text",
           "settings": {
-            "text": "Text block{{ product.metafields.custom.moneytest | metafield_text }}",
+            "text": "Text block",
             "video": "shopify:\/\/files\/videos\/Share your brand story by adding a video to your store.mp4",
             "text_style": "body"
           }
