@@ -58,6 +58,7 @@
                 {% if variant.available == false %}
                   disabled
                 {% endif %}
+                data-title="{{ variant.title }}"
                 value="{{ variant.id }}"
               >
                 {{ variant.title }}
