@@ -5,6 +5,18 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);
         })        
-        console.log(selectionOptions)
+        var matchedVariant = product.variants.find((variant) => {
+          let pass = true;
+          for(let i=0; i < selectionOptions.lenght; i++){
+            if(selectionOptions.indexOf(variant.options[i]) === -1){
+              pass = false;
+              break;
+            }
+          }
+          return pass;
+        })
+
+        console.log(matchedVariant);
+      
     })
 })
