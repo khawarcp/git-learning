@@ -11,7 +11,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
     
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);
-          console.log(radio);
+          
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
@@ -24,7 +24,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
-      
+      console.log(matchedVariant);
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
