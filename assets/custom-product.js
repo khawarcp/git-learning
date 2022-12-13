@@ -8,9 +8,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         let selectionOptions = [];        
     
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
-          selectionOptions.push(radio.value);  
-          console.log(this)
-        },this)        
+          selectionOptions.push(radio.value);           
+        })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
           for(let i=0; i < selectionOptions.length; i++){                        
