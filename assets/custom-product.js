@@ -4,14 +4,11 @@ const productVariants = JSON.parse(document.querySelector('#product-variants-jso
 
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
 
-    console.log(radio)
-  
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
     
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
-          selectionOptions.push(radio.value);
-          
+          selectionOptions.push(radio.value);          
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
