@@ -5,16 +5,16 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);
         })        
-        // var matchedVariant = product.variants.find((variant) => {
-        //   var pass = true;
-        //   for(var i=0; i < selectionOptions.lenght; i++){
-        //     if(selectionOptions.indexOf(variant.options[i]) === -1){
-        //       pass = false;
-        //       break;
-        //     }
-        //   }
-        //   return pass;
-        // })
+        var matchedVariant = product.variants.find((variant) => {
+          var pass = true;
+          for(var i=0; i < selectionOptions.length; i++){
+            if(selectionOptions.indexOf(variant.options[i]) === -1){
+              pass = false;
+              break;
+            }
+          }
+          return pass;
+        })
 
         console.log(selectionOptions);
       
