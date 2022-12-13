@@ -23,7 +23,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-            console.log(variant);
+            console.log(variant.dataset.quantity);
         })
       
     })
