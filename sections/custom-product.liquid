@@ -7,11 +7,32 @@
   <img src="{{ product.featured_image | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
   <div class="card-body">
     <h5 class="card-title"> {{ product.title }} </h5>
-    
+      {% assign current_variant = product.selected_or_first_available_variant %}
+      {% if product.variants.size > 1 %}
+      <div class="product-options">
+          {% for option in product.options_with_values %}
+              <label> {{ option.name }} </label>
+              <div class="product-button">
+                  {% for value in option.values %}
+                      <div class="single-value">
+                          <input type="radio"
+                            {% if option.selected_value == value %} checked {% endif %}
+                            value="{{ value }}"
+                            name="{{ option.name }}"
+                            id = "{{ option.name | handleize }}-{{ value | handleize }}"
+                            />
+                            <label for="{{ option.name | handleize }}-{{ value | handleize }}"> {{ value }} </label>
+                      </div>
+                  {% endfor %}
+              </div>
+          {% endfor %}
+      </div>
+      {% endif %}
 
+    
     <form method="post" action="/cart/add">
-      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" />
-      <input type="submit" name="add" value="Add to cart" class="btn btn-dark w-100 btn-large" />
+      <input type="hidden" name="id" value="{{ current_variant.id }}" />
+      <input type="submit" name="add" value="Add to cart" class="btn btn-dark w-100" />
     </form>
     
   </div>
