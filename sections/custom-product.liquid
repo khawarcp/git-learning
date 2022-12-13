@@ -8,7 +8,8 @@
   <div class="card-body">
     <h5 class="card-title"> {{ product.title }} </h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <form action="/cart/add" action="POST">        
+    <form action="/cart/add" action="POST">
+        <input type="hidden" disabled name="id" value="{{ product.selected_or_first_available_variant.id }}" />
         <button type="submit" name="add"  class="btn btn-dark"> Add to cart </button>
     </form>
   </div>
