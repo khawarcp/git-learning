@@ -1,0 +1,29 @@
+.product-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}.product-button {}
+
+.single-value {
+    display: flex;
+    align-items: center;
+}
+
+.single-value input {
+    display: none;
+}
+
+.single-value input + label {
+    border: 1px solid;
+    padding: 5px 10px;
+    min-width: 70px;
+    display: flex;
+    justify-content: center;
+    cursor:pointer;
+}
+
+.single-value input:checked + label {
+    border: 2px solid;
+}
+
