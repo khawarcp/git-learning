@@ -27,7 +27,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           
           
           console.log(variant);
-          console.log(selectionOptions);
+          // console.log(selectionOptions);
+          // console.log(v)
 
           
           // if(variant.value == matchedVariant.id){              
