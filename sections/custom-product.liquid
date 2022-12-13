@@ -9,8 +9,8 @@
     <h5 class="card-title"> {{ product.title }} </h5>
     
     <form method="post" action="/cart/add">
-        <input type="hidden" disabled value="{{ product.variants.first.id }}" />
-        <button type="submit" name="add"  class="btn btn-dark"> Add to cart </button>
+        <input type="hidden" disabled name="id" value="{{ product.variants.first.id }}" />
+        <button type="submit" class="btn btn-dark"> Add to cart </button>
     </form>
   </div>
 </div>
