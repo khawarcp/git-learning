@@ -8,7 +8,9 @@
   <div class="card-body">
     <h5 class="card-title"> {{ product.title }} </h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="{{ product.url }}" class="btn btn-dark">Go somewhere</a>
+    <form action="/cart/add" action="POST">        
+        <button type="submit" name="add"  class="btn btn-dark"> Add to cart </button>
+    </form>
   </div>
 </div>
 </div>
