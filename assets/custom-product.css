@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-}.product-button {}
+}
 
 .single-value {
     display: flex;
