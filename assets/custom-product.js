@@ -2,8 +2,10 @@ const product = JSON.parse(document.querySelector('#product-json').textContent);
 const productVariants = JSON.parse(document.querySelector('#product-variants-json').textContent);
 
 
-document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => 
-  console.log(radio)
+document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
+
+    console.log(radio)
+  
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
     
