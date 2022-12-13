@@ -48,10 +48,10 @@
           </div>
         {% endif %}
 
-        <div class="d-none">
+        <div class="d-none master-select">
           <select name="id" id="Variants-{{ section.id }}" class="select__select">
             {%- for variant in product.variants -%}
-              <option {{ variant.inventory_quantity }}
+              <option data-quantity="{{ variant.inventory_quantity }}"
                 {% if variant == product.selected_or_first_available_variant %}
                   selected="selected"
                 {% endif %}
