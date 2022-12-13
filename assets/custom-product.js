@@ -15,8 +15,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
             if(selectionOptions.indexOf(variant.options[i]) === -1){
               pass = false;
               break;
-            }
-            console.log(variant);
+            }            
           }
           return pass;
         })
