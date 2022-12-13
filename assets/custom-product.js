@@ -1,4 +1,7 @@
 const product = JSON.parse(document.querySelector('#product-json').textContent);
+const productVariants = JSON.parse(document.querySelector('#product-variants-json').textContent);
+console.log(productVariants)
+
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
     radio.addEventListener('change', () => {
         let selectionOptions = [];
@@ -16,8 +19,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
-        document.getElementById('product-id').value = matchedVariant.id;
-        console.log({{ product.variants | json }});
+        document.getElementById('product-id').value = matchedVariant.id;        
         
       
     })
