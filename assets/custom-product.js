@@ -33,12 +33,13 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           console.log(variantTitle);
           
           console.log(selectionOptions);
+          
           // if()
           // let selected
           // console.log(`${selectionOptions[0]} / ${selectionOptions[1]}`);
-          // if(variantTitle.contains(selectionOptions)){
-          //   console.log(variant.value)            
-          // }
+          if(variantTitle == selectionOptions){
+            console.log(variant.value)            
+          }
 
           if(variantTitle == selectionOptions){
             console.log(variant.value)            
