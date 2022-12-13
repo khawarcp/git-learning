@@ -4,14 +4,14 @@ console.log(productVariants)
 
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
     radio.addEventListener('change', () => {
-        let selectionOptions = [];
-        console.log(this)
+        let selectionOptions = [];        
 
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;
+          console.log(variant.id)
           for(let i=0; i < selectionOptions.length; i++){
             console.log(variant.inventory_management);
             if(selectionOptions.indexOf(variant.options[i]) === -1){
