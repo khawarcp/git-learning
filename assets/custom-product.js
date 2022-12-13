@@ -27,9 +27,9 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           
           
           console.log(variant);
-          // console.log(selectionOptions);
           // console.log(v)
           let variantTitle = variant.dataset.title;
+          console.log(variantTitle);
           if(variantTitle.contains(selectionOptions)){
             console.log(variant.value)            
           }
