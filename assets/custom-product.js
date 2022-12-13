@@ -16,6 +16,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
+        document.getElementById('product-id').value = matchedVariant.id;
         console.log(matchedVariant);
       
     })
