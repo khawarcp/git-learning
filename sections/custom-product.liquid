@@ -12,7 +12,7 @@
     <h5 class="card-title"> {{ product.title }} </h5>
     <form method="post" action="/cart/add">
       {% assign current_variant = product.selected_or_first_available_variant %}
-      <input id="product-id" type="hidden" name="id" value="{{ current_variant.id }}" />
+      <input id="product-id" data-quantity="{{ current_variant.inventory_quantity }}" type="hidden" name="id" value="{{ current_variant.id }}" />
       
       
       {% if product.variants.size > 1 %}
