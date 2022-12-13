@@ -14,7 +14,7 @@
       
       {% if product.variants.size > 1 %}
       <div class="product-options">
-          {% for option in product.options_by_name.color %}
+          {% for option in product.options_with_values %}
               <label> {{ option.name }} </label>
               <div class="product-button">
                   {% for value in option.values %}
