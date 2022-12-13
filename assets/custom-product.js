@@ -24,9 +24,9 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-          // alert(variant.value);
           
-          // console.log( matchedVariant.id);
+          
+          console.log(variant.title);
           console.log(selectionOptions);
           if(variant.value == matchedVariant.id){              
               console.log(variant.title);
