@@ -1,4 +1,4 @@
-const product = JSON.parse(document.querySelector('#product-json').textContent);
+let product = JSON.parse(document.querySelector('#product-json').textContent);
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
     radio.addEventListener('change', () => {
         let selectionOptions = [];
