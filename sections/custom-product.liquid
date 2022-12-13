@@ -8,11 +8,15 @@
   <div class="card-body">
     <h5 class="card-title"> {{ product.title }} </h5>
     
+    <form action="/cart/add" method="POST">
+        <input type="hidden" disabled name="id" value="{{ product.variants.first.id }}" />
+        <button type="submit" name="add"  class="btn btn-dark"> Add to cart </button>
+    </form>
     <form method="post" action="/cart/add">
 
   <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
 
-  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+  
 
   <input type="submit" value="Add to cart" class="btn" />
 
