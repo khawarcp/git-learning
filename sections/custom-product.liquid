@@ -7,6 +7,10 @@
   <img src="{{ product.featured_image | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
   <div class="card-body">
     <h5 class="card-title"> {{ product.title }} </h5>
+    <form method="post" action="/cart/add">
+      
+      <input type="hidden" name="id" value="{{ current_variant.id }}" />
+      
       {% assign current_variant = product.selected_or_first_available_variant %}
       {% if product.variants.size > 1 %}
       <div class="product-options">
@@ -30,9 +34,8 @@
       {% endif %}
 
     
-    <form method="post" action="/cart/add">
-      <input type="hidden" name="id" value="{{ current_variant.id }}" />
-      <input type="submit" name="add" value="Add to cart" class="btn btn-dark w-100" />
+      <button type="submit" name="add" class="btn btn-dark w-100" > Add to cart</button>      
+      
     </form>
     
   </div>
