@@ -13,8 +13,6 @@
     <form method="post" action="/cart/add">
       {% assign current_variant = product.selected_or_first_available_variant %}
       <input id="product-id" data-quantity="{{ current_variant.inventory_quantity }}" type="hidden" name="id" value="{{ current_variant.id }}" />
-      
-      
       {% if product.variants.size > 1 %}
       <div class="product-options">
           {% for option in product.options_with_values %}
@@ -35,15 +33,10 @@
           {% endfor %}
       </div>
       {% endif %}
-
-    
-      
       <div class="add-to-cart">
           <button type="submit" name="add" class="btn btn-dark w-100" > Add to cart</button>
-      </div>
-      
-    </form>
-    
+      </div>      
+    </form>    
   </div>
 </div>
 </div>
@@ -66,9 +59,3 @@
     ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
