@@ -1,13 +1,13 @@
-let product = JSON.parse(document.querySelector('#product-json').textContent);
+var product = JSON.parse(document.querySelector('#product-json').textContent);
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
     radio.addEventListener('change', () => {
-        let selectionOptions = [];
+        var selectionOptions = [];
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);
         })        
-        let matchedVariant = product.variants.find((variant) => {
-          let pass = true;
-          for(let i=0; i < selectionOptions.lenght; i++){
+        var matchedVariant = product.variants.find((variant) => {
+          var pass = true;
+          for(var i=0; i < selectionOptions.lenght; i++){
             if(selectionOptions.indexOf(variant.options[i]) === -1){
               pass = false;
               break;
