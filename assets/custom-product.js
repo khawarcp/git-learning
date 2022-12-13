@@ -17,7 +17,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         })
 
         document.getElementById('product-id').value = matchedVariant.id;
-        console.log(product.variants);
+        console.log({{ product.variants | json }});
         
       
     })
