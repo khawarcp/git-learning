@@ -20,11 +20,12 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
+      console.log(selectionOptions);
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-              console.log(variant.value);
-          console.log('Matched Variant ' + matchedVariant.id);
+          //     console.log(variant.value);
+          // console.log('Matched Variant ' + matchedVariant.id);
           if(variant.value == matchedVariant.id){              
               console.log(variant.title);
             }
