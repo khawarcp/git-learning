@@ -34,6 +34,10 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           //   console.log(variant.value)            
           // }
 
+          if(variantTitle == selectionOptions){
+            console.log(variant.value)            
+          }
+
           
           // if(variant.value == matchedVariant.id){              
           //     console.log(variant.title);
