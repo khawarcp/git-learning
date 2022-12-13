@@ -403,8 +403,24 @@
 
               {% assign current_variant = product.selected_or_first_available_variant %}
             {% if product.variants.size > 1 %}
+              <div id="product-options">
                 {% for option in product.options_with_values %}
+                    <div class="product-buttons">
+                        {% for value in option.values %}
+                          <label> {{ option.value }} </label>
+                          <div class="single-value">
+                              <input type="radio"
+                                  {% if option.selected_value == value %} checked {% endif %}
+                                  name="{{ option.name }}"
+                                  value="{{ value }}"
+                                  id="{{ option.name | handleize }}-{{ value | handleize }}"
+                                  />
+                            <label for="{{ option.name | handleize }}-{{ value | handleize }}"> {{ value }} </label>
+                          </div>
+                        {% endfor %}
+                    </div>                  
                   {% endfor %}
+                    </div>
               {% endif %}
             
           {%- when 'buy_buttons' -%}
