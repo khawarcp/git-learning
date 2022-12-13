@@ -26,7 +26,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
 
           let variantTitle = variant.dataset.title;
-          console.log(variant)
+          console.log(variant.innerText)
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
           console.log(variantTitle);
           
