@@ -21,11 +21,11 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
-      // console.log(matchedVariant.id);
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
           alert(variant.value);
+          
           console.log( matchedVariant.id);
           if(variant.value == matchedVariant.id){              
               console.log(variant.title);
