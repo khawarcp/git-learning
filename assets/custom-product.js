@@ -30,7 +30,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           // console.log(selectionOptions);
           // console.log(v)
           let variantTitle = variant.dataset.title;
-          if(variantTitle)
+          console.log(variantTitle)
 
           
           // if(variant.value == matchedVariant.id){              
