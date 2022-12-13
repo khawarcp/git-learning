@@ -51,7 +51,7 @@
         <div class="d-none">
           <select name="id" id="Variants-{{ section.id }}" class="select__select">
             {%- for variant in product.variants -%}
-              <option
+              <option {{ variant.inventory_quantity }}
                 {% if variant == product.selected_or_first_available_variant %}
                   selected="selected"
                 {% endif %}
