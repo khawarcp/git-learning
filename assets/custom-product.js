@@ -16,6 +16,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
               pass = false;
               break;
             }
+            console.log(variant);
           }
           return pass;
         })
