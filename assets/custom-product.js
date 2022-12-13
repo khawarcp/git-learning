@@ -24,31 +24,18 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.getElementById('product-id').value = matchedVariant.id;                
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-          
-          
-          // console.log(variant);
-          // console.log(v)
+
           let variantTitle = variant.dataset.title;
+          console.log(variant)
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
           console.log(variantTitle);
           
           console.log(selectionOptions);
-          
-          // if()
-          // let selected
-          // console.log(`${selectionOptions[0]} / ${selectionOptions[1]}`);
-          if(variantTitle == selectionOptions){
-            console.log(variant.value)            
-          }
 
           if(variantTitle == selectionOptions){
             console.log(variant.value)            
           }
 
-          
-          // if(variant.value == matchedVariant.id){              
-          //     console.log(variant.title);
-          //   }
         })
       
     })
