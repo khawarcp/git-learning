@@ -400,6 +400,12 @@
               </div>
             </noscript>
             {% endcomment %}
+
+              {% assign current_variant = product.selected_or_first_available_variant %}
+            {% if product.variants.size > 1 %}
+                {% for option in product.options_with_values %}
+                  {% endfor %}
+              {% endif %}
             
           {%- when 'buy_buttons' -%}
             <div {{ block.shopify_attributes }}>
