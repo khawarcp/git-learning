@@ -18,10 +18,10 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
             }            
           }
           return pass;
-        }, this)
+        })
 
         document.getElementById('product-id').value = matchedVariant.id;        
-        console.log(this.matchedVariant.inventory_quantity);
+        console.log(matchedVariant.inventory_quantity);
       
     })
 })
