@@ -14,10 +14,10 @@
   <div class="card" style="width: 25rem;">   
       {% if current_variant.featured_image %}
           {% assign featured = current_variant.featured_image %}
-          <img src="{{ featured | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
+          <img id="product-image" src="{{ featured | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
       {% else %}
           {% assign featured = product.featured_image %}
-          <img src="{{ featured | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
+          <img id="product-image" src="{{ featured | image_url : width : 200  }}" class="card-img-top" alt="{{ product.title }}">
       {% endif %}
       <ul class="product-images-thumbs list-style-none d-flex align-items-center justify-content-center">
           {% for image in product.images %}
