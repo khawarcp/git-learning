@@ -8,7 +8,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         let selectionOptions = [];    
 
          radio.removeAttribute('checked');
-    radio.setAttribute('checked', 'checked');
+    
       
         //pushing the checked inputs into the selectedOption Array
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {      
