@@ -28,7 +28,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           variant.removeAttribute('selected');
           if(variant.value == matchedVariant.id){
              console.log(variant.dataset.quantityvariant);
-            variant.setAttribute('selected');
+            variant.setAttribute('selected', true);
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
           }          
         })
