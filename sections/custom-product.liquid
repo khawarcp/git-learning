@@ -70,7 +70,14 @@
         </div>
 
         <div class="add-to-cart">
-          <button type="submit" name="add" class="btn btn-dark w-100">Add to cart</button>
+          <button type="submit" name="add" class="btn btn-dark w-100"
+            {% unless current_variant.available %} disabled {% endunless %}>
+          {% if current_variant.available %}
+            Add to cart
+          {% else %}
+            Out of Stock
+          {% endif %}
+          </button>
         </div>
       </form>
     </div>
