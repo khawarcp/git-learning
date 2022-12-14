@@ -15,7 +15,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
-          console.log(selectionOptions);
+          console.log(variant);
           for(let i=0; i < selectionOptions.length; i++){                        
             if(selectionOptions.indexOf(variant.options[i]) === -1){
               pass = false;
