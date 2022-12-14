@@ -33,7 +33,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           
           console.log(matchedVariant.title);
 
-          if(variantText.includes(selectionOptions)){
+          if(variantText.includes(matchedVariant.title)){
             console.log('hey')            
           }
 
