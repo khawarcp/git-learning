@@ -11,7 +11,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           // radio.closest('.single-value').nextElementSibling.removeAttribute('checked');
           // radio.closest('.single-value').previousElementSibling.removeAttribute('checked');
           radio.setAttribute('checked', 'checked');
-          console.log();
+          console.log(radio.closest('.single-value').nextElementSibling);
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
