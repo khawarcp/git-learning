@@ -18,7 +18,7 @@
       </ul>
     
     <div class="card-body">
-       <a href="{{ product.url }}"> <h5 class="card-title">{{ product.title }}</h5> </a>
+       <h5 class="card-title"> <a href="{{ product.url }}"> {{ product.title }} </a> </h5> 
       <form method="post" action="/cart/add">
         {% assign current_variant = product.selected_or_first_available_variant %}
         <input
