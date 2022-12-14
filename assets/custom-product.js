@@ -32,6 +32,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         })
 
         //add to cart button inventory enable disable
+        let add_to_cart = document.getElementById('add-cart-btn');
+        console.log(add_to_cart);
       
     })
 })
