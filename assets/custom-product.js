@@ -27,8 +27,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {          
           variant.removeAttribute('selected');
           if(variant.value == matchedVariant.id){
-             console.log(variant.dataset.quantityvariant);
-            variant.setAttribute('selected', true);
+             console.log(variant);
+            variant.setAttribute('selected', 'selected');
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
           }          
         })
