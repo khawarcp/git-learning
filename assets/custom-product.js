@@ -27,7 +27,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
           // document.querySelectorAll('.master-select .select__select option').removeAttribute('selected');
           // document.querySelector("myAnchor").removeAttribute("href")
-          console.log(variant);
+          // console.log(variant);
+          variant.removeAttribute('selected');
           if(variant.value == matchedVariant.id){
              console.log(variant.dataset.quantityvariant);            
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
