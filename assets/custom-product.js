@@ -49,5 +49,5 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
 document.getElementById('quant-plus').addEventListener('click', () => {
     let currentVal = Number(document.getElementById('quantity').value);
-    document.getElementById('quantity').value = currentVal++;
+    document.getElementById('quantity').value = currentVal+1;
 })
