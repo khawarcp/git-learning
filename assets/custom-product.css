@@ -45,9 +45,10 @@
 }
 
 .product-images-thumbs li.selected {
-    border: 2px solid;
+    border: 2px solid red;
 }
 
 .product-images-thumbs li {
     border: 2px solid transparent;
+    padding : 3px;
 }
