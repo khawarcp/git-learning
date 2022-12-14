@@ -34,6 +34,13 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         //add to cart button inventory enable disable
         let add_to_cart = document.getElementById('add-cart-btn');
         console.log(add_to_cart);
+        if(matchedVariant.available){
+          add_to_cart.textContent = 'Add to Cart';
+          add_to_cart.disabled = true;
+        }else{
+          add_to_cart.textContent = 'Out of Stock';
+          add_to_cart.disabled = true;
+        }
          console.log(matchedVariant);
       
     })
