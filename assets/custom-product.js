@@ -31,7 +31,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
           // console.log(variantTitle);
           
-          // console.log(selectionOptions);
+          console.log(matchedVariant);
 
           if(variantText.includes(selectionOptions)){
             console.log('hey')            
