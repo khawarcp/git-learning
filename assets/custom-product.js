@@ -7,8 +7,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
     radio.addEventListener('change', () => {
         let selectionOptions = [];    
 
-         // 
-    
+                   
         document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
           radio.removeAttribute('checked');
           console.log(radio.closest('.single-value').firstElementChild);
