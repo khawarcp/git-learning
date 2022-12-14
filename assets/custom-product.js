@@ -23,17 +23,12 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
         document.getElementById('product-id').value = matchedVariant.id;                
 
+        //matchvariant id from master select variant id
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-
-          // let variantTitle = variant.dataset.title;                    
-            //variant value is variant id
-          // console.log(typeof Number(variant.dataset.quantity-variant));
           if(variant.value == matchedVariant.id){
              console.log(variant.dataset.quantityvariant);
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
-          }
-          
-
+          }          
         })
       
     })
