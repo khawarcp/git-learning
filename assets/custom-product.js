@@ -2,13 +2,15 @@ const product = JSON.parse(document.querySelector('#product-json').textContent);
 
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
 
+    radio.removeAttribute('checked');
+    radio.setAttribute('checked', 'checked');
+  
     radio.addEventListener('change', () => {
-        let selectionOptions = []; 
-
-      radio.removeAttribute('checked');
+        let selectionOptions = [];       
         //pushing the checked inputs into the selectedOption Array
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {      
           selectionOptions.push(radio.value);                    
+          radio.setAttribute('checked', 'checked');
         })        
           
         //finding the matched variant from variants of selected options
