@@ -29,7 +29,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
             //variant value is variant id
           // console.log(typeof Number(variant.dataset.quantity-variant));
           if(variant.value == matchedVariant.id){
-             console.log(variant.value);
+             console.log(variant.dataset.quantity-variant);
             document.getElementById('product-id').dataset.quantity = Number(variant.dataset.quantity-variant);
           }
           
