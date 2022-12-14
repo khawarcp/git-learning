@@ -10,8 +10,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
                    
         document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
           radio.removeAttribute('checked');
-          console.log(this.radio);
           const radioObj = radio;
+          console.log(radio);
           // console.log(radio.closest('.single-value').firstElementChild);
         }, this)
       
