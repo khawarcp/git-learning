@@ -9,7 +9,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);  
           radio.setAttribute('checked', 'checked');
-          console.log(radio.closest('.single-value'));
+          console.log(radio.closest('.single-value').nextElementSibling);
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
