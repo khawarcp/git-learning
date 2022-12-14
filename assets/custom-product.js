@@ -43,7 +43,6 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           add_to_cart.textContent = 'Out of Stock';
           add_to_cart.disabled = true;
         }
-         
       
     })
 })
