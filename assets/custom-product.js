@@ -16,7 +16,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           if(radio.hasAttribute('checked')){            
             radio.removeAttribute('checked');
           }else{            
-            radio.settAttribute('checked', 'checked');
+            radio.setAttribute('checked', 'checked');
           }
         })        
         let matchedVariant = product.variants.find((variant) => {
