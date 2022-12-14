@@ -8,11 +8,11 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
   
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
-        document.querySelector('.product-button input[type=radio]').removeAttribute('checked');    
+        // document.querySelector('.product-button input[type=radio]').removeAttribute('checked');    
         
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);    
-          radio.setAttribute('checked', 'checked');
+          // radio.setAttribute('checked', 'checked');
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
@@ -25,7 +25,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           return pass;
         })
 
-        document.getElementById('product-id').value = matchedVariant.id;                
+        document.getElementById('product-id').value = matchedVariant.id;          
+        console.log(matchedVariant);
 
         //matchvariant id from master select variant id
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {          
