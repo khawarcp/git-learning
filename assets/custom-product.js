@@ -27,14 +27,14 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
           let variantTitle = variant.dataset.title;
           let variantText = variant.innerText;
-          console.log(variantText);
+          console.log(variant);
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
           // console.log(variantTitle);
           
-          console.log(matchedVariant.title);
+          // console.log(matchedVariant.title);
 
           if(variantText.includes(matchedVariant.title)){
-            console.log('hey')            
+            console.log()            
           }
 
         })
