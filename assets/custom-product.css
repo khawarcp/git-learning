@@ -43,3 +43,11 @@
     text-decoration: none;
     color: black;
 }
+
+.product-images-thumbs li.selected {
+    border: 2px solid;
+}
+
+.product-images-thumbs li {
+    border: 2px solid transparent;
+}
