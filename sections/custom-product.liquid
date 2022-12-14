@@ -70,7 +70,7 @@
         </div>
 
         <div class="add-to-cart">
-          <button type="submit" name="add" class="btn btn-dark w-100"
+          <button type="submit" name="add" id="add-cart-btn" class="btn btn-dark w-100"
             {% unless current_variant.available %} disabled {% endunless %}>
           {% if current_variant.available %}
             Add to cart
