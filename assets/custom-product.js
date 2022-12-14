@@ -8,7 +8,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         //pushing the checked inputs into the selectedOption Array
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {      
           selectionOptions.push(radio.value);          
-          document.querySelector('..product-button input[type=radio]:checked').removeAttribute('selected');
+          document.querySelector('.product-button input[type=radio]:checked').removeAttribute('checked');
         })        
           
         //finding the matched variant from variants of selected options
