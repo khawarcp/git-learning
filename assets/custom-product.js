@@ -30,6 +30,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
           }          
         })
+
+        //add to cart button inventory enable disable
       
     })
 })
