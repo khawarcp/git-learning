@@ -29,7 +29,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           let variantText = variant.innerText;
           console.log(variantText);
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
-          console.log(variantTitle);
+          // console.log(variantTitle);
           
           // console.log(selectionOptions);
 
