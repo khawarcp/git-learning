@@ -69,6 +69,20 @@
           </select>
         </div>
 
+        <div class="button-wrapper">
+          <button class="quantity-minus">
+            Minus
+          </button>
+          <input 
+            type=""
+            id="quantity"
+            value="1"
+            name="quantity"
+            min="1"
+          <button class="quantity-plus">
+            plus
+          </button>
+        </div>
         <div class="add-to-cart">
           <button type="submit" name="add" id="add-cart-btn" class="btn btn-dark w-100"
             {% unless current_variant.available %} disabled {% endunless %}>
@@ -86,6 +100,10 @@
 
 <script type="application/json" id="product-json">
   {{ product | json }}
+</script>
+
+<script type="application/json" id="product-variants-json">
+  {{ product.variants | json }}
 </script>
 
 {{ 'custom-product.js' | asset_url | script_tag }}
