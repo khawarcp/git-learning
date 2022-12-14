@@ -8,8 +8,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         let selectionOptions = [];        
                 radio.closest('.single-value').nextElementSibling.firstElementChild.removeAttribute('checked')
           
-      radio.setAttribute('checked', 'checked');
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
+      radio.setAttribute('checked', 'checked');
           selectionOptions.push(radio.value);  
           
         })        
