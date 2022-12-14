@@ -27,7 +27,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
           // let variantTitle = variant.dataset.title;                    
             //variant value is variant id
-          console.log(variant);
+          console.log(variant.dataset.quantity-variant);
           if(variant.value == matchedVariant.id){
              console.log(variant.value);
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantity-variant;
