@@ -8,11 +8,9 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         let selectionOptions = [];        
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);  
-          // radio.closest('.single-value').nextElementSibling.removeAttribute('checked');
-          // radio.closest('.single-value').previousElementSibling.removeAttribute('checked');
+          radio.closest('.single-value').nextElementSibling.firstElementChild.removeAttribute('checked')
+          radio.closest('.single-value').previousElementSibling.firstElementChild.removeAttribute('checked')
           radio.setAttribute('checked', 'checked');
-          console.log(radio.closest('.single-value').nextElementSibling.firstElementChild);
-          // console.log(radio.closest('.single-value').previousElementSibling);
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
