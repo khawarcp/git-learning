@@ -4,7 +4,7 @@ const productVariants = JSON.parse(document.querySelector('#product-variants-jso
 
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
 
-            console.log(radio.closest('.product-button input[type=radio]'));
+            console.log(radio.closest('.product-button input[type=radio]').textContent);
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
         // document.querySelector('.product-button input[type=radio]').removeAttribute('checked');    
