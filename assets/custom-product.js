@@ -4,8 +4,6 @@ const productVariants = JSON.parse(document.querySelector('#product-variants-jso
 
 document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
 
-    
-  
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
         // document.querySelector('.product-button input[type=radio]').removeAttribute('checked');    
@@ -13,11 +11,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);    
           console.log(radio);
-          if(radio.hasAttribute('checked')){            
-            radio.removeAttribute('checked');
-          }else{            
-            radio.setAttribute('checked', 'checked');
-          }
+            radio.setAttribute('checked', 'checked');          
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
