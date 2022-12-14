@@ -56,6 +56,5 @@ document.getElementById('quant-minus').addEventListener('click', () => {
     let currentVal = Number(document.getElementById('quantity').value);
     if(currentVal > 1){
       document.getElementById('quantity').value = currentVal-1;
-    }
-      
+    }      
 })
