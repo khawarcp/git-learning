@@ -25,11 +25,12 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
         //matchvariant id from master select variant id
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {          
+           //remove selected attribute from option
           variant.removeAttribute('selected');
           if(variant.value == matchedVariant.id){
+            //add selected attribute from option
             variant.setAttribute('selected', 'selected');
-            document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
-             console.log(variant);
+            document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;             
           }          
         })
 
