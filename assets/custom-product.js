@@ -6,14 +6,14 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
             // console.log(radio.closest('.product-button input[type=radio]'));
     // console.log(radio)
-      radio.toggleAttribute('checked');
+      radio.removeAttribute('checked');
     radio.addEventListener('change', () => {
         let selectionOptions = [];        
         // document.querySelector('.product-button input[type=radio]').removeAttribute('checked');    
         
         document.querySelectorAll('.product-button input[type=radio]:checked').forEach((radio) => {
           selectionOptions.push(radio.value);            
-            radio.toggleAttribute('checked');
+            radio.setAttribute('checked', 'checked');          
         })        
         let matchedVariant = product.variants.find((variant) => {
           let pass = true;          
