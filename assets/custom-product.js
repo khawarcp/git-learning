@@ -36,7 +36,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         console.log(add_to_cart);
         if(matchedVariant.available){
           add_to_cart.textContent = 'Add to Cart';
-          add_to_cart.disabled = true;
+          add_to_cart.disabled = false;
         }else{
           add_to_cart.textContent = 'Out of Stock';
           add_to_cart.disabled = true;
