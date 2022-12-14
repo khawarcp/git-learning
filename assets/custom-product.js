@@ -25,22 +25,14 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
 
-          let variantTitle = variant.dataset.title;
-          let variantText = variant.innerText;
-          // console.log(variant.value);
-          selectionOptions = selectionOptions.toString().replace(',', ' / ');
-          // console.log(variantTitle);
-          
-          // console.log(matchedVariant.title);
-
+          // let variantTitle = variant.dataset.title;                    
+            //variant value is variant id
+          console.log(variant);
           if(variant.value == matchedVariant.id){
-             console.log(variant.value)                        
+             console.log(variant.value);
+            document.getElementById('product-id').dataset.quantity = variant.
           }
           
-          // if(variantText.includes(matchedVariant.title)){
-          //   // console.log(variant.value)            
-            
-          // }
 
         })
       
