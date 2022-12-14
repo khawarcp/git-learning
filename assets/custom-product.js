@@ -25,7 +25,8 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
 
         //matchvariant id from master select variant id
         document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-          document.querySelectorAll('.master-select .select__select option').removeAttribute('selected')
+          document.querySelectorAll('.master-select .select__select option').removeAttribute('selected');
+          document.querySelector("myAnchor").removeAttribute("href")
           if(variant.value == matchedVariant.id){
              console.log(variant.dataset.quantityvariant);            
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
