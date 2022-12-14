@@ -24,13 +24,11 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
         document.getElementById('product-id').value = matchedVariant.id;                
 
         //matchvariant id from master select variant id
-        document.querySelectorAll('.master-select .select__select option').forEach((variant) => {
-          // document.querySelectorAll('.master-select .select__select option').removeAttribute('selected');
-          // document.querySelector("myAnchor").removeAttribute("href")
-          // console.log(variant);
+        document.querySelectorAll('.master-select .select__select option').forEach((variant) => {          
           variant.removeAttribute('selected');
           if(variant.value == matchedVariant.id){
-             console.log(variant.dataset.quantityvariant);            
+             console.log(variant.dataset.quantityvariant);
+            variant.setAttribute('selected');
             document.getElementById('product-id').dataset.quantity = variant.dataset.quantityvariant;
           }          
         })
