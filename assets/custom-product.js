@@ -11,7 +11,7 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
     
         document.querySelectorAll('.product-button input[type=radio]').forEach((radio) => {
           radio.removeAttribute('checked');
-          console.log(radio.closest('.single-value'));
+          console.log(radio.closest('.single-value').firstElementChild);
         })
       
         //pushing the checked inputs into the selectedOption Array
