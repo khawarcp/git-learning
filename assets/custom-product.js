@@ -29,14 +29,18 @@ document.querySelectorAll('.product-button input[type=radio]').forEach((radio) =
           let variantText = variant.innerText;
           // console.log(variant.value);
           selectionOptions = selectionOptions.toString().replace(',', ' / ');
-          console.log(variantTitle);
+          // console.log(variantTitle);
           
-          console.log(matchedVariant.title);
+          // console.log(matchedVariant.title);
 
-          if(variantText.includes(matchedVariant.title)){
-            // console.log(variant.value)            
-            
+          if(variant.value == matchedVariant.id){
+             console.log(variant.value)                        
           }
+          
+          // if(variantText.includes(matchedVariant.title)){
+          //   // console.log(variant.value)            
+            
+          // }
 
         })
       
