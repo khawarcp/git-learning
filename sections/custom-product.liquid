@@ -110,10 +110,6 @@
   {{ product | json }}
 </script>
 
-<script type="application/json" id="product-variants-json">
-  {{ product.variants | json }}
-</script>
-
 {{ 'custom-product.js' | asset_url | script_tag }}
 
 {% schema %}
