@@ -21,7 +21,7 @@
       {% endif %}
       <ul class="product-images-thumbs list-style-none d-flex align-items-center justify-content-center">
           {% for image in product.images %}
-            <li> <img src="{{ image | img_url : "master" }}" class="img-fluid"/> </li>
+            <li class="{% if image == featured %} selected {% endif %}"> <img src="{{ image | img_url : "master" }}" class="img-fluid"/> </li>
           {% endfor %}
       </ul>
     
