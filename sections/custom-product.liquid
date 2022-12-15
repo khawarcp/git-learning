@@ -6,11 +6,12 @@
 >
 {{ 'custom-product.css' | asset_url | stylesheet_tag }}
 
-{% assign product = all_products[section.settings.product] %}
- {% assign current_variant = product.selected_or_first_available_variant %}
+
 <div class="container mt-5">
   
 
+  {% assign product = all_products[section.settings.product] %}
+ {% assign current_variant = product.selected_or_first_available_variant %}
   <div class="card" style="width: 25rem;">   
       {% if current_variant.featured_image %}
           {% assign featured = current_variant.featured_image %}
