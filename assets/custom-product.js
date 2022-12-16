@@ -98,6 +98,11 @@ add_btn.addEventListener('click', (e) => {
     .then((data) => {
         document.getElementById('add-cart-btn').textContent = 'Item added to cart';
         document.getElementById('cart-notification').classList.add('animate', 'active');
+        console.log(data);
+        // cart counter update
+        // let cartContent = fetch(window.Shopify.routes.root + 'cart.js')
+        //   .then(response => response.json())
+        //   .then(data => return data );
         console.log('item added to the cart');
     })
     .catch((error) => {
