@@ -88,7 +88,7 @@ add_btn.addEventListener('click', (e) => {
     let addToCart = document.getElementById('product-form')
     let formData = new FormData(addToCart);
     
-    fetch(window.Shopify.routes.root + '/cart/add.js', {
+    fetch(window.Shopify.routes.root + 'cart/add.js', {
          method : 'POST',
             body : formData    
     })
