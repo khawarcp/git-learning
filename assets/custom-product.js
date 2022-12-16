@@ -96,11 +96,11 @@ add_btn.addEventListener('click', (e) => {
         return response.json();
     })
     .then((data) => {
-        console.log(data);   
         document.getElementById('add-cart-btn').textContent = 'Item added to cart';
         document.getElementById('cart-notification').classList.add('animate', 'active');
         console.log('item added to the cart');
-        console.log(Shopify.getCart())
+        var cart = fetch(window.Shopify.routes.root + 'cart.js');        
+        console.log(cart);   
     })
     .catch((error) => {
       console.error('Error:', error);
