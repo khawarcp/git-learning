@@ -79,3 +79,29 @@ document.querySelectorAll('.product-images-thumbs li').forEach((item) => {
         document.getElementById('product-image').setAttribute('src', item.querySelector('img').getAttribute('src'))
     })    
 })
+
+
+// add to cart ajax fetech api
+let add_btn = document.getElementById('add-cart-btn');
+add_btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    let addToCart = document.getElementById('product-form')
+    let formData = new FormData(addToCart);
+    
+    fetch(window.Shopify.routes.root + '/cart/add.js', {
+         method : 'POST',
+            body : formData    
+    })
+    .then((response) => {
+        return response.json();
+    })
+    .then((data) => {
+        console.log(data);   
+        document.getElementById('add-cart-btn').textContent = 'Item added to cart';
+        document.getElementById('cart-notification').classList.add('animate active');
+        console.log('item added to the cart');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });    
+});
