@@ -100,14 +100,14 @@ add_btn.addEventListener('click', (e) => {
         document.getElementById('cart-notification').classList.add('animate', 'active');
         console.log(data);
         // cart counter update
-        fetch(window.Shopify.routes.root + 'cart.js')
-          .then(response => response.json())
-          .then((cart) => {
-            console.log(cart) 
-              console.log(cart.item_count) 
+        // fetch(window.Shopify.routes.root + 'cart.js')
+        //   .then(response => response.json())
+        //   .then((cart) => {
+        //     console.log(cart) 
+        //       console.log(cart.item_count) 
             
-            document.querySelector('.cart-count-bubble span').textContent = cart.item_count;
-          });
+        //     document.querySelector('.cart-count-bubble span').textContent = cart.item_count;
+        //   });
         console.log('item added to the cart');
     })
     .catch((error) => {
