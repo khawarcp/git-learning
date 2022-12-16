@@ -100,6 +100,7 @@ add_btn.addEventListener('click', (e) => {
         document.getElementById('add-cart-btn').textContent = 'Item added to cart';
         document.getElementById('cart-notification').classList.add('animate', 'active');
         console.log('item added to the cart');
+        console.log(Shopify.getCart())
     })
     .catch((error) => {
       console.error('Error:', error);
