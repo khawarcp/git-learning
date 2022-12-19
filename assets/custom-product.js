@@ -127,5 +127,5 @@ add_btn.addEventListener('click', (e) => {
 // Extra Work create the json at html and loop through it
 let product_variants = JSON.parse(document.getElementById('product-variant-json').textContent);
 product_variants.variants.forEach((item) => {
-    console.log(item.var_id, item.var_price, item.var_compare_at_price, item.var_quantity, item.base_price);
+    // console.log(item.var_id, item.var_price, item.var_compare_at_price, item.var_quantity, item.base_price);
 });
