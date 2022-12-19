@@ -119,7 +119,8 @@
           "var_id" : {{ variant.id | json}},
           "var_price" : {{ variant.price | money | json }},
           "var_compare_at_price" : {{ variant.compare_at_price| money | json }},
-          "var_quantity" : {{ variant.inventory_quantity | json }}
+          "var_quantity" : {{ variant.inventory_quantity | json }},
+          "availability" : "http://schema.org/{% if variant.available %}InStock{% else %}OutOfStock{% endif %}"
         }{% unless forloop.last %},{% endunless %}
       {%- endfor -%}
     ]
