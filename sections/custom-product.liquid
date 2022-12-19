@@ -116,7 +116,7 @@
     "variants" : [
       {%- for variant in product.variants -%}
         {
-          "var_id" : {{ variant.id | money }},
+          "var_id" : {{ variant.id }},
           "var_price" : {{ variant.price | money }},
           "var_compare_at_price" : {{ variant.compare_at_price| money }},
           "var_quantity" : {{ variant.inventory_quantity }}
