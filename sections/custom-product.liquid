@@ -115,9 +115,9 @@
   {
     "variants" : [
       {% for variant in product.variants %}
-        "variant_price" : {{ variant.price }},
-        "variant_compare_at_price" : {{ variant.compare_at_price }},
-        "variant_quantity" : {{ variant.inventory_quantity }}
+        "variant_price" : {{ variant.price | json }},
+        "variant_compare_at_price" : {{ variant.compare_at_price | json}},
+        "variant_quantity" : {{ variant.inventory_quantity| json }}
       {% endfor %}
     ]
   }
