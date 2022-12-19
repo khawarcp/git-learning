@@ -111,6 +111,18 @@
   {{ product | json }}
 </script>
 
+<script type="application/json" id="product-variant-json">
+  {
+    "variants" : [
+      {% for variant in product.variants %}
+        "variant_price" : {{ variant.price }},
+        "variant_compare_at_price" : {{ variant.compare_at_price }},
+        "variant_quantity" : {{ variant.inventory_quantity }}
+      {% endfor %}
+    ]
+  }
+</script>
+
 {{ 'custom-product.js' | asset_url | script_tag }}
 
 {% schema %}
